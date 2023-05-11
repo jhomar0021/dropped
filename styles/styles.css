@@ -1,0 +1,126 @@
+body{
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+}
+.navigationButtons{
+    height: 100px;
+    width: 100px;
+    border: none;
+    background: transparent;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .20s;
+}
+.navigationButtons:hover{
+    border: solid;
+    border-color: violet;
+    background-color: violet;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+}
+.navigationButtons:active{
+    border: solid;
+    border-color: rgb(238, 130, 130);
+    background-color: rgb(238, 130, 130);
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+
+}
+.introMessage1{
+    font-size: 25px;
+    color: black;
+    margin-top: 35px;
+}
+.introMessage2{
+    margin: 50px;
+}
+.Greetings{
+    overflow: hidden;
+    margin-top: 50px;
+    height: 100px;
+    width: 100px;
+    font-family: Poppins;
+    font-size: 20px;
+    color: transparent;
+    border: none;
+    background-color: violet;
+    transition: .50s;
+    border-radius: 50%;
+}
+.Greetings:hover{
+    height: 300px;
+    width: 100%;
+    color: black;
+    border-radius: 150px;
+}
+.Greetings:hover::after{
+    height: 300px;
+    width: 100%;
+    color: black;
+}
+.skillsAndTools{
+    overflow: hidden;
+    margin-top: 40px;
+    height: 100px;
+    width: 100px;
+    font-family: Poppins;
+    font-size: 20px;
+    color: transparent;
+    border: none;
+    background-color: violet;
+    transition: .50s;
+    border-radius: 50%;
+}
+.skillsAndToolsTxt{
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: transparent;
+    overflow: hidden;
+}
+
+.skillsAndTools:hover{
+    height: 300px;
+    width: 100%;
+    color: black;
+    border-radius: 150px;
+}
+.latestProjects{
+    overflow: hidden;
+    margin-top: 40px;
+    height: 100px;
+    width: 100px;
+    font-family: Poppins;
+    font-size: 14px;
+    color: black;
+    border: none;
+    background-color: violet;
+    transition: .50s;
+    border-radius: 50%;
+}
+.latestProjects:hover{
+    height: 300px;
+    width: 100%;
+    color: black;
+    border-radius: 150px;
+}
+.contactInformation{
+    background-color: violet;
+    border: none;
+    width: 100%;
+    border-radius: 150px;
+    margin-top: 150px;
+}
