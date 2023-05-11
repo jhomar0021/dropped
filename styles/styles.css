@@ -119,6 +119,7 @@ body{
 }
 .contactInformation{
     background-color: violet;
+    font-family: Poppins;
     border: none;
     width: 100%;
     border-radius: 150px;
