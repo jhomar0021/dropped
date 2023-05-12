@@ -5,11 +5,21 @@ body{
     margin: 0;
     padding: 0;
 }
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .navigation{
     display: flex;
     justify-content: space-around;
 }
 .navigationButtons{
+    transform-origin: center;
     height: 100px;
     width: 100px;
     border: none;
@@ -47,60 +57,54 @@ body{
 }
 .Greetings{
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-left: 100px;
     height: 100px;
     width: 100px;
     font-family: Poppins;
     font-size: 20px;
-    color: transparent;
+    color: black;
     border: none;
     background-color: violet;
     transition: .50s;
     border-radius: 50%;
 }
 .Greetings:hover{
-    height: 300px;
+    animation-name: none;
+    margin-left: 0;
+    animation-name: none;
+    height: 400px;
     width: 100%;
-    color: black;
     border-radius: 150px;
-}
-.Greetings:hover::after{
-    height: 300px;
-    width: 100%;
-    color: black;
 }
 .skillsAndTools{
     overflow: hidden;
     margin-top: 40px;
+    margin-left: 100px;
     height: 100px;
     width: 100px;
     font-family: Poppins;
-    font-size: 20px;
-    color: transparent;
+    font-size: 13px;
+    color: black;
     border: none;
     background-color: violet;
     transition: .50s;
     border-radius: 50%;
 }
-.skillsAndToolsTxt{
-    font-size: 20px;
-    color: black;
-    margin-top: 10px;
-    box-sizing: border-box;
-    border: 1px solid;
-    border-color: transparent;
-    overflow: hidden;
-}
 
 .skillsAndTools:hover{
-    height: 300px;
+    animation-name: none;
+    margin-left: 0;
+    height: 400px;
     width: 100%;
+    font-size: 30px;
     color: black;
     border-radius: 150px;
 }
 .latestProjects{
     overflow: hidden;
     margin-top: 40px;
+    margin-left: 100px;
     height: 100px;
     width: 100px;
     font-family: Poppins;
@@ -112,7 +116,10 @@ body{
     border-radius: 50%;
 }
 .latestProjects:hover{
-    height: 300px;
+    animation-name: none;
+    font-size: 20px;
+    margin-left: 0;
+    height: 400px;
     width: 100%;
     color: black;
     border-radius: 150px;
@@ -124,4 +131,11 @@ body{
     width: 100%;
     border-radius: 150px;
     margin-top: 100px;
+}
+.{
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
 }
